@@ -1,0 +1,52 @@
+When generate password button is clicked, alert stating "Let's generate a password"
+User is prompted to enter a password length between 8 and 128 characters (must be a number)
+Response is stored in a var
+User is asked to confirm if they wish to include the following charater types:
+    -lowercase
+    -uppercase
+    -numeric
+    -special
+Each response is stored in a var
+Validate at least one character type is choosen
+Password is generated and printed to the page
+
+
+
+
+<button click>
+alert(Let's generate a password)
+
+var numChar = prompt(how long should your password be between 8 and 128 characters?)
+    validate user entered a number (parseInt)
+    if user entered a number between 8 and 128, continue
+    else alert(you did not enter a number between 8 and 128. please try again) 
+
+var optionsArray [includes the vars that have been selected by user]
+
+var lowCase = confirm(should your password contain lowercase characters?)
+    if answer = true include abcdefghijklmnopqrstuvwxyz added to possible options        
+    if answer = false do not include
+
+var upCase = confirm(should your password contain uppercase characters?)
+    if answer = true include ABCDEFGHIJKLMNOPQRSTUVWXYZ as possible options
+    if answer = false do not include
+
+var numeric = confirm(should your password contain numeric characters?)
+    if answer = true include 0123456789 as possible options
+    if answer = false do not include
+
+var special = confirm(should your password contain special characters?)
+    if answer = true include !@#$%^&*()-_=+[{]}\|'";:/?.>,<] as possible options
+    if answer = false do not include
+
+if all vars = false (please try again)
+             
+generate numChar times the characters selected 
+var password = ""
+for (var i = 0; i < numChar; i++) {
+   var index = math.floor(math.random) * optionsArray.length;
+   
+}
+
+
+numChar times loop thru and select random char add into end of var password
